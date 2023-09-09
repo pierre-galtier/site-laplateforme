@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ecole La Plateforme, le Campus Méditerranéen du Numérique</title>
+  <link rel="stylesheet" href="laplateforme.css" type="text/css" />
+  <script src="https://kit.fontawesome.com/aea431f007.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+    <a href="accueil.html"><img class="laplateforme_logo_header" src="img/laplateforme_logo_header.png" /></a>
+    <nav>
+      <ul class="menu_header">
+        <li class="item"><a>Qui sommes-nous ?</a></li>
+        <li class="item"><a>Cursus</a></li>
+        <li class="item"><a>Spécialisations</a></li>
+        <li class="item"><a>Entreprise</a></li>
+        <li class="item"><a>Kids</a></li>
+        <li class="item"><a>News</a></li>
+        <li class="item"><a>Contact</a></li>
+        <li class="item"><a>Français</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container-inscription">
+    <div class="column-inscription">
+      <div class="campus_titre">
+        <p>Campus méditerranéen du numérique</p>
+      </div>
+      <div class="text-container-inscription">
+        <p>Formez-vous efficacement à tous les métiers du numérique et au monde 
+          de l’entreprise. Déposez votre candidature au cursus de votre choix.</p>
+        <div class="column-img">
+          <img src="img/plateformeurs.jpeg" alt="plateformeurs.jpeg">
+        </div>
+      </div>
+      </div>
+      <div class="form-container">
+
+      <form  action="utilisateurs_inscrits.php" method="POST">
+        <div class="titre_choisissez">
+          <p><strong>Choisissez votre projet de formation</strong></p>
+        </div>
+        <div class="indique">
+          <p>« * » indique les champs nécessaires</p>
+        </div>
+        <div class="container">
+          <div class="container-content">
+          <select id="prefixe" name="prefixe" placeholder="Préfixe">
+            <option value="prefixe" selected>Préfixe</option>
+            <option value="Mr." selected>Mr.</option>
+            <option value="Mme.">Mme.</option>
+            <option value="Mx.">Mx.</option>
+          </select>
+        </div>
+
+          <div class="container-content">
+
+          <input type="text" id="prenom" name="prenom" placeholder="Prénom*">
+        </div>
+
+          <div class="container-content">
+
+          <input type="text" id="nom" name="nom" placeholder="Nom*">
+        </div>
+
+        </div>
+        <div class="container">
+          <div class="container-content">
+
+          <input type="email" id="email" name="email" placeholder="E-mail*">
+        </div>
+        <div class="container-content">
+
+          <input type="tel" id="telephone_mobile" name="telephone_mobile" placeholder="Téléphone Mobile*">
+        </div>
+
+        </div>
+        <div class="container">
+          <div class="container-content">
+
+          <input type="text" id="ville" name="ville" placeholder="Ville*">
+        </div>
+        <div class="container-content">
+
+          <input type="text" id="codepostal" name="codepostal" placeholder="Code Postal*">
+        </div>
+        </div>
+      
+        <div class="container">
+          <div class="container-content">
+
+          <select id="pays" name="pays">
+            <option value="france">France</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+
+        </div>
+      
+        <div class="container">
+          <div class="container-content">
+            <select id="cursus" name="cursus">
+            <option value="cursus">Cursus Souhaité*</option>
+            <option value="aws">AWS re/Start - Metiers du Cloud</option>
+            <option value="start">La Plateforme/ Start</option>
+            <option value="bachelor">Bachelor IT</option>
+            <option value="master">Master</option>
+            <option value="postgraduate">Post-Graduate</option>
+          </select>
+        </div>
+
+        </div>
+      
+        <div class="container">
+          <div class="container-content">
+            <select id="campus" name="campus">
+            <option value="campus">Campus Souhaité*</option>
+            <option value="marseille">Marseille</option>
+            <option value="cannes">Cannes</option>
+            <option value="toulon">Toulon</option>
+            <option value="martigues">Martigues</option>
+          </select>
+        </div>
+
+        </div>
+      
+        <div class="container">
+          <div class="container-content">
+            <select id="niveau" name="niveau">
+            <option value="niveau">Niveau actuel*</option>
+            <option value="sansdiplome">Sans diplôme</option>
+            <option value="bac">Niveau BAC</option>
+            <option value="bac1">Bac+1</option>
+            <option value="bac2">Bac+2</option>
+            <option value="bac3">Bac+3</option>
+            <option value="bac4">Bac+4</option>
+            <option value="bac5">Bac+5</option>
+            <option value=">bac5">> Bac+5</option>
+          </select>
+        </div>
+
+        </div>
+      
+        <div class="container">
+          <div class="container-content">
+            <textarea id="message" name="message">Quelques mots sur votre parcours et motivations*</textarea>
+        </div>
+
+        </div>
+      
+        <div class="container">
+          <div class="container-content-text">
+            <input type="checkbox" id="newsletter" name="newsletter">
+          <label for="newsletter">J'accepte de recevoir des informations de la part de La Plateforme</label>
+        </div>
+        </div>
+        <div class="container">
+          <div class="container-content">
+            <input type="submit" value="Envoyer">
+          </div>
+
+      </div>
+
+      </form>
+            </div>
+
+  </div>
+
+
+
+  <footer>
+    <div class="column-vide"></div>
+
+    <div class="column-footer-1">
+      <a><img class="laplateforme_logo_footer" src="img/laplateforme_logo_footer.svg" /></a>
+      <div class="button-list">
+        <button class="button-social"><i class="fa fa-facebook" aria-hidden="true"></i>
+        </button>
+        <button class="button-social"><i class="fa fa-instagram" aria-hidden="true"></i>
+        </button>
+        <button class="button-social"><i class="fa fa-linkedin" aria-hidden="true"></i>
+        </button>
+        <button class="button-social"><i class="fa fa-twitter" aria-hidden="true"></i>
+        </button>
+        <button class="button-social"><i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </button>
+      </div>
+      <ul>
+        <li><a href="https://www.facebook.com/LaPlateformeIO" title="Suivez sur Facebook" target="_blank"></a></i>
+        </li>
+        <li><a href="https://www.instagram.com/LaPlateformeIO" title="Suivez sur Instagram" target="_blank"></a></li>
+        <li><a href="https://www.linkedin.com/school/laplateformeio/" title="Suivez sur LinkedIn" target="_blank"></a></li>
+        <li><a href="https://www.twitter.com/LaPlateformeIO" title="Suivez sur Twitter" target="_blank"></a></li>
+        <li><a href="https://www.youtube.com/LaPlateformeIO" title="Suivez sur YouTube" target="_blank"></a></li>
+      </ul>
+        <div class="footer-button">
+        <div class="rejoindre-button">
+          <p>Rejoignez nos équipes</p>
+        </div>
+        <div class="brochure-button">
+          <p>Télécharger la brochure</p>
+        </div>
+    </div>
+  </div>
+    <div class="column">
+      <h3>La Plateforme</h3>
+      <ul>
+        <li><a>Accueil</a></li>
+        <li><a>Qui sommes-nous ?</a></li>
+        <li><a>Notre brochure</a></li>
+        <li><a>Ils parlent de nous</a></li>
+        <li><a>Annuaire des Plateformeurs</a></li>
+        <li><a>Alumni des Plateformeurs</a></li>
+        <li><a>Taxe d'apprentissage</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Les Formations</h3>
+      <ul>
+        <li><a>La Plateforme/Start</a></li>
+        <li><a>Coding School</a></li>
+        <li><a>Artificial Intelligence School</a></li>
+        <li><a>Cyber Security School</a></li>
+        <li><a>Innovation Lab</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Informations</h3>
+      <ul>
+        <li><a>8 rue d’hozier, 13002 Marseille</a></li>
+        <li><a>Tel : 04.84.89.43.69</a></li>
+        <div class="contact-button">
+          <p><strong>Contact</strong></p>
+        </div>
+      </ul>
+    </div> 
+    <div class="column-vide"></div>
+
+  </footer>
+
+  <div class="footer-line">
+    <p>© La Plateforme - Établissement d'enseignement supérieur technique privé - Tous droits réservés. | Mentions légales | Cookies | Référent handicap : Jessica Soriano</p>
+</div>
+
+
+  
+  
+</body>
+</html>
